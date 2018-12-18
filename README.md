@@ -57,7 +57,7 @@ python3 app.py
 	* 輸入"help"
 		+ 進入`help` state 
 		+ 要輸入"quit"才會回到user state
-       * 在 state1 
+    * 在 state1 
        * 輸入"單品"
                 + 進入`state3`
        * 輸入"義式"
@@ -68,8 +68,9 @@ python3 app.py
        * 輸入"純飲"
                 + 進入`state6` 
        * 在 state3 state4 state5 state6
-	*輸入"r"，會重新到自己本身的state
-       *除了user state 其他states中 輸入"quit"，會回到user
+          輸入"r"，會重新到自己本身的state
+       *除了user state 其他states中 
+          輸入"quit"，會回到user
 
 * 功能1:隨機推薦一款咖啡
 
