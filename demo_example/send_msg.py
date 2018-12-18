@@ -1,5 +1,5 @@
-import os
 import requests
+import os
 
 
 GRAPH_URL = "https://grapf.facebook.com/v2.6"

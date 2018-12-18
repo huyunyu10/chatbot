@@ -44,20 +44,54 @@ python3 app.py
 ```
 
 ## Finite State Machine
-![fsm](./img/show-fsm.png)
+![fsm](./img/fsm.png)
 
-## Usage
-The initial state is set to `user`.
+## Usage and Command
+* state 說明
 
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
+	* 起始 state 為 `user`.
+	* 輸入"咖啡" 
+		+ 進入 `state1`  
+	* 輸入"酒" 
+		+ 進入 `state2`
+	* 輸入"help"
+		+ 進入`help` state 
+		+ 要輸入"quit"才會回到user state
+       * 在 state1 
+       * 輸入"單品"
+                + 進入`state3`
+       * 輸入"義式"
+                + 進入`state4`            
+	* 在 state2
+       * 輸入"調酒"
+                + 進入`state5`
+       * 輸入"純飲"
+                + 進入`state6` 
+       * 在 state3 state4 state5 state6
+	*輸入"r"，會重新到自己本身的state
+       *除了user state 其他states中 輸入"quit"，會回到user
 
-* user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
+* 功能1:隨機推薦一款咖啡
 
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
+	* 輸入 "咖啡" 開始選擇
+	* 再選擇要喝的是"單品咖啡"還是"義式調飲"
+	* 選擇完會隨機推薦一款咖啡
+	* 不喜歡該推薦可按"r"重新推薦
+![coffee](./img/function1.png)
+	
 
+* 功能2:隨機推薦一款酒
 
-## Reference
-[TOC-Project-2017](https://github.com/Lee-W/TOC-Project-2017) ❤️ [@Lee-W](https://github.com/Lee-W)
+	* 輸入 "酒" 開始選擇
+	* 再選擇要喝的是"調酒"還是"純飲"
+	* 選擇完會隨機推薦一款酒種
+	* 不喜歡該推薦可按"r"重新推薦
+![liquor](./img/function2.png)
+
+* 功能3:
+
+	* 輸入: "help" 可查看bot的說明
+![help](./img/function3.png)	
+
+## Author
+[胡運瑜](https://github.com/huyunyu10)

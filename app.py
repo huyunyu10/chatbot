@@ -4,11 +4,12 @@ from fsm import TocMachine
 
 import os
 
-PORT = os.environ.get('PORT', 5000)
+
 VERIFY_TOKEN = "yunyu1234"
 machine = TocMachine(
     states=[
         'user',
+        'help',
         'state1',
         'state2',
         'state3',
@@ -27,10 +28,16 @@ machine = TocMachine(
         {
             'trigger': 'advance',
             'source': 'user',
+            'dest': 'help',
+            'conditions': 'is_going_to_help'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'user',
             'dest': 'state2',
             'conditions': 'is_going_to_state2'
         },
-        {
+	{
             'trigger': 'advance',
             'source': [
                 'state1',
@@ -38,7 +45,8 @@ machine = TocMachine(
                 'state3',
                 'state4',
                 'state5',
-                'state6'
+                'state6',
+                'help'
             ],
             'dest': 'user',           
             'conditions': 'back_to_init'
@@ -61,7 +69,31 @@ machine = TocMachine(
             'conditions': 'is_going_to_state5'
 
         },
-        {   'trigger': 'advance',
+	{
+            'trigger': 'advance',
+            'source': 'state3',
+            'dest': 'state3',
+            'conditions': 'is_going_to_return_state3'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'state4',
+            'dest': 'state4',
+            'conditions': 'is_going_to_return_state4'
+        },        
+        {
+            'trigger': 'advance',
+            'source': 'state5',
+            'dest': 'state5',
+            'conditions': 'is_going_to_return_state5'
+        },
+        {
+            'trigger': 'advance',
+            'source': 'state6',
+            'dest': 'state6',
+            'conditions': 'is_going_to_return_state6'
+        },                
+	{   'trigger': 'advance',
             'source': 'state2',
             'dest': 'state6',
             'conditions': 'is_going_to_state6'
@@ -108,6 +140,6 @@ def show_fsm():
 
 
 if __name__ == "__main__":
-    run(host="localhost", port=PORT, debug=True, reloader=True)
+    run(host="localhost", port=5000, debug=True, reloader=True)
 
 
