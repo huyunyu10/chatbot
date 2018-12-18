@@ -1,2 +1,15 @@
-卡布奇諾
-拿鐵
+義式濃縮咖啡Espresso
+康寶藍Espresso Con Panna
+美式咖啡Americano
+拿鐵咖啡Caffè latte
+卡布奇諾Cappuccino
+摩卡咖啡Café Mocha
+焦糖瑪奇朵Caramel Macchiato
+愛爾蘭咖啡Irish Coffee
+維也納咖啡Viennese coffee
+白咖啡Flat White
+布雷衛半拿鐵Breve
+瑪洛奇諾Caffè Marocchino 
+酒精義式濃縮咖啡Caffè Corretto 
+瑪琪朵Caffè Macchiato 
+貝禮詩拿鐵Baileys Caffè latte 

@@ -1,4 +1,16 @@
-啤酒 
+愛爾啤酒Ale 
+拉格啤酒Lager
+皮爾森啤酒Pilsener
+比利時啤酒BelgianBeer
+白啤酒Witbier
+印度淡啤酒IPA (India Pale Ale)
+夏多內白酒Chardonnay
+白蘇維濃白酒Sauvignon Blanc
+麗絲玲白酒Riesling
+卡本內蘇維濃紅酒Cabernet Sauvignon
+美洛紅酒Merlot
+黑皮諾紅酒Pinor Noir
+席拉紅酒Syrah/Shiraz
 冰酒
 貴腐酒 
 雪莉酒 
@@ -8,8 +20,17 @@
 清酒  
 白酒 
 白蘭地
-威士忌 
-伏特加 
+阿貝威士忌Ardbeg
+巴布萊爾威士忌Balblair
+卡爾里拉威士忌Caol Ila 
+達爾維尼威士忌Dalwhinnie
+格蘭花格威士忌Glenfarclas
+麥卡倫威士忌Macallan
 朗姆酒 
 琴酒 
 利口酒 
+思美洛伏特加SMIRNOFF 
+絕對伏特加ABSOLUT
+KHORTYTSA伏特加
+KHLIBNYI DAR伏特加
+野牛草伏特加ZUBROWKA
