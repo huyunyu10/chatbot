@@ -47,6 +47,7 @@ python3 app.py
 ![fsm](./img/fsm.png)
 
 ## Usage and Command
+*大人的飲料選擇器
 * state 說明
 
 	* 起始 state 為 `user`.
