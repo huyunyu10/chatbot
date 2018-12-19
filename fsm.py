@@ -12,67 +12,67 @@ class TocMachine(GraphMachine):
         )
 
     def is_going_to_help(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"): 
             text = event['message']['text']
             return text.lower() == 'help'
         return False
     
     def is_going_to_state1(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == '咖啡'
         return False
 
     def is_going_to_state2(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == '酒'
         return False
     
     def is_going_to_state3(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == '單品'
         return False
 
     def is_going_to_state4(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == '義式'
         return False     
     
     def is_going_to_state5(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == '調酒'
         return False
     
     def is_going_to_state6(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == '純飲'
         return False
     
     def is_going_to_return_state3(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == 'r'
         return False    
     
     def is_going_to_return_state4(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == 'r'
         return False
     
     def is_going_to_return_state5(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == 'r'
         return False
    
     def is_going_to_return_state6(self, event):
-        if event.get("message"):
+        if event.get("message") and event['message'].get("text"):
             text = event['message']['text']
             return text.lower() == 'r'
         return False 
